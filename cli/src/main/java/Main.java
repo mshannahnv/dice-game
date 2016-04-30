@@ -68,12 +68,14 @@ public class Main {
         System.out.print("You have the choice to use 1, 2, or 3 ");
         System.out.print("dice to increase your overall total ");
         System.out.println("and achieve the goal of 23.\n");
-
+         
+        System.out.println("- Scoring -\n");
         System.out.println("If you go over 23, it's game over and your score is 0.\n");
         System.out.println("Stopping before 23, your total is recorded as your score.\n");
-        System.out.println("If you reach 23, your score doubles to 46.");
-        System.out.println("BONUS:");
-        System.out.println("If you roll 3 consecutive dice, you earn an extra 10 points.");
+        System.out.println("If you reach 23, your score doubles to 46.\n");
+        
+        System.out.println("- Bonus Points -\n");
+        System.out.println("If you roll 3 consecutive dice, you earn an extra 10 points.\n");
         System.out.println("If you roll 3 of a kind, you earn an extra 15 points.");
     }
 
