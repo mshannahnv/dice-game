@@ -300,8 +300,9 @@ public class DiceGameGUI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
-        //Display pop up showing score before starting new game.
-        JOptionPane.showMessageDialog(
+        if (thisGame.getCurrentTotal() < 23) {
+            //Display pop up showing score before starting new game.
+            JOptionPane.showMessageDialog(
             null, 
             "Game Over! You save your score of " 
             + thisGame.getCurrentTotal()
@@ -309,8 +310,7 @@ public class DiceGameGUI extends javax.swing.JFrame {
             + thisGame.getScore(),
             "Game Over!",
             JOptionPane.OK_OPTION);
-        btnRoll.setEnabled(false);
-        btnStop.setEnabled(false);
+        }
         
         // TODO add your handling code here:
         String name = lblPlayerName.getText();
